@@ -1,0 +1,55 @@
+{
+  "name": "@ttungbmt/fuse-geo-utils",
+  "version": "0.0.1",
+  "description": "Geo Utilities",
+  "keywords": [
+    "fuse",
+    "react",
+    "geo",
+    "utils"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laragis/fuse-geo-utils.git"
+  },
+  "author": "Truong Thanh Tung <ttungbmt@gmail.com>",
+  "sideEffects": false,
+  "exports": {
+    "require": "./dist/index.js",
+    "default": "./dist/index.modern.mjs"
+  },
+  "main": "dist/index.js",
+  "umd:main": "dist/index.umd.js",
+  "module": "dist/index.mjs",
+  "source": "src/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "size": "size-limit",
+    "clean": "rimraf dist",
+    "build": "microbundle",
+    "watch": "microbundle watch",
+    "prebuild": "npm run clean",
+    "preversion": "npm run build",
+    "postversion": "git push --follow-tags"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^8.0.1",
+    "microbundle": "^0.15.1",
+    "path": "^0.12.7",
+    "rimraf": "^3.0.2",
+    "size-limit": "^8.0.1"
+  },
+  "size-limit": [
+    {
+      "limit": "4 kB",
+      "path": "dist/index.js"
+    }
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
