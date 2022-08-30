@@ -35,6 +35,21 @@
     "postversion": "git push --follow-tags"
   },
   "dependencies": {
+    "@googlemaps/polyline-codec": "^1.0.28",
+    "@turf/bbox": "^6.5.0",
+    "@turf/center": "^6.5.0",
+    "@turf/flip": "^6.5.0",
+    "@turf/helpers": "^6.5.0",
+    "@turf/invariant": "^6.5.0",
+    "@turf/meta": "^6.5.0",
+    "@turf/nearest-point": "^6.5.0",
+    "@turf/points-within-polygon": "^6.5.0",
+    "@turf/truncate": "^6.5.0",
+    "geojson-validation": "^1.0.2",
+    "leaflet": "^1.8.0",
+    "lodash": "^4.17.21",
+    "proj4": "^2.8.0",
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "@size-limit/preset-small-lib": "^8.0.1",
