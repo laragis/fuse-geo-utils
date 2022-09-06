@@ -1,7 +1,7 @@
 import { find } from "lodash";
 import adminCodes from "./adminCodes";
 
-function getProjectionByAdminCode() {
+function getProjectionByAdminCode(code) {
   return find(adminCodes, { ma_tp: code })?.projection;
 }
 
