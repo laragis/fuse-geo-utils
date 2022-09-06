@@ -1,5 +1,5 @@
 import proj4 from 'proj4'
-import tinhTps from './listTinhTPs'
+import tinhTps from './adminCodes'
 
 // proj4.defs([
 //   [
