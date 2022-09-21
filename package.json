@@ -29,7 +29,7 @@
     "size": "size-limit",
     "clean": "rimraf dist",
     "build": "microbundle",
-    "watch": "microbundle watch",
+    "watch": "microbundle watch --no-compress",
     "prebuild": "npm run clean",
     "preversion": "npm run build",
     "postversion": "git push --follow-tags"
