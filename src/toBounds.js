@@ -1,6 +1,9 @@
 import bbox from '@turf/bbox'
+import { isArray } from 'lodash'
 
 function toBounds(geojson) {
+  if(isArray(geojson)) return geojson
+
   let bboxArr = bbox(geojson)
 
   return [
